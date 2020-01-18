@@ -1,0 +1,37 @@
+.form-group {
+    &.hide-label {
+        label {
+            visibility: hidden;
+        }
+    }
+
+    label {
+        width: 100%;
+        font-weight: 600;
+    }
+
+    .react-datepicker-wrapper {
+        width: 100%;
+
+        .react-datepicker__input-container {
+            width: 100%;
+
+            &:after {
+                content            : "";
+                position           : absolute;
+                right              : 0;
+                top                : 0;
+                display            : block;
+                height             : 38px;
+                width              : 37px;
+                background-image   : url('../../../img/calendar.svg');
+                background-repeat  : no-repeat;
+                background-position: center center;
+            }
+
+            input {
+                padding-right: 36px;
+            }
+        }
+    }
+}
